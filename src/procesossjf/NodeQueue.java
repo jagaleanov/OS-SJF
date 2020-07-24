@@ -51,7 +51,7 @@ public class NodeQueue {
             Node temp = this.head;
 
             while (temp.getNext() != null) {
-                if (temp.getNext().getRaf() <= removed.getRaf()) {
+                if (temp.getNext().getRaf() < removed.getRaf()) {
                     prev = temp;
                     removed = temp.getNext();
                 }
